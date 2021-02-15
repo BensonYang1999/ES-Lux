@@ -1,0 +1,237 @@
+.title {
+    /*display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;*/
+    color: #7B68EE;
+    width: 100%;
+    font-size: 40px;
+    font-family: 微軟正黑體;
+    white-space: nowrap;
+}
+
+.btn_music {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+    transition-duration: 0.3s;
+    width: 80px;
+    height: 35px;
+    border-radius: 5px;
+    font-family: 微軟正黑體, arial, sans-serif;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.btn_music:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.music-button {
+    font-family: 微軟正黑體, arial, sans-serif;
+    font-size: 16px;
+    margin: 3px;
+}
+
+.effect-button {
+    font-family: 微軟正黑體, arial, sans-serif;
+    font-size: 16px;
+    margin: 3px;
+}
+
+.time {
+    width: fit-content;
+    white-space: nowrap;
+    font-family: 微軟正黑體;
+}
+
+/*table {
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 20px;
+    font-family: 微軟正黑體;
+}
+
+th {
+    background-color: #7FFFD4;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+tr, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}*/
+
+.table1 {
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 20px;
+    font-family: 微軟正黑體;
+}
+
+.th1 {
+    background-color: #FFC0CB;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.tr1, .td1 {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.tr1:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table2 {
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 微軟正黑體;
+    font-size: 16px;
+}
+
+.tr2, .td2 {
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+    font-family: 微軟正黑體;
+    font-size: 20px;
+}
+
+.table3 {
+    border-collapse: collapse;
+    text-align: center;
+    font-family: 微軟正黑體, arial, sans-serif;
+    font-size: 8px;
+    border: 1px solid black;
+}
+
+.th3 {
+    background-color: #FFC0CB;
+    border-bottom: 1px solid #000;
+}
+
+.td3, .th3 {
+    border: 1px solid black;
+    padding: 5px;
+    /*border-left: 1px solid #000;
+    border-right: 1px solid #000;*/
+}
+
+.tr3:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/*.tr3 {
+    padding: 5px;
+    border: 1px solid black;
+}*/
+
+.table4 {
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 20px;
+    font-family: 微軟正黑體;
+    margin: 5px;
+}
+
+.th4 {
+    background-color: #7FFFD4;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.tr4, .td4 {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.checkbox {
+    width: 25px;
+    height: 25px;
+}
+
+.checkbox_auto {
+    /*play: inline-block;*/
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+}
+
+audio {
+    width: 80vw;
+}
+
+header {
+    /*display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;*/
+    text-align: center;
+    /*vertical-align: middle;*/
+}
+
+section {
+    margin: 10px auto;
+    text-align: center;
+    font-family: 微軟正黑體, arial, sans-serif;
+}
+
+@media screen and (min-width: 1440px) {
+    .sec_table {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        font-family: 微軟正黑體, arial, sans-serif;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .sec_table {
+        display: flex;
+        margin: auto;
+        justify-content: left;
+        align-items: left;
+        font-family: 微軟正黑體, arial, sans-serif;
+    }
+}
+
+.music-time {
+    color: red;
+    font-size: 24px;
+    font-family: 微軟正黑體;
+    text-align: center;
+    vertical-align: middle;
+}
+
+option:first-child {
+    display: none;
+}
+
+.cus-select {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    /* demo only */
+    background-color: #87CEFA;
+    color: #000;
+    font-size: inherit;
+    padding: .5em;
+    padding-right: .5em;
+    border-radius: 3px;
+    text-indent: 0.01px;
+    text-overflow: '';
+    -webkit-appearance: button;
+    /* hide default arrow in chrome OSX */
+}

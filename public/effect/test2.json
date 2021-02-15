@@ -1,0 +1,120 @@
+[
+    {
+        "X": {
+            "H": {
+                "func": "FuncRamp",
+                "range": "1",
+                "lower": "2",
+                "p1": "3",
+                "p2": "4"
+            },
+            "S": {
+                "func": "FuncTri",
+                "range": "5",
+                "lower": "6",
+                "p1": "7",
+                "p2": "8"
+            },
+            "V": {
+                "func": "FuncRamp",
+                "range": "9",
+                "lower": "10",
+                "p1": "11",
+                "p2": "12"
+            }
+        },
+        "Y": {
+            "H": {
+                "func": "FuncNone",
+                "range": "13",
+                "lower": "14",
+                "p1": "15",
+                "p2": "16"
+            },
+            "S": {
+                "func": "FuncRamp",
+                "range": "17",
+                "lower": "18",
+                "p1": "19",
+                "p2": "20"
+            },
+            "V": {
+                "func": "FuncTri",
+                "range": "21",
+                "lower": "22",
+                "p1": "23",
+                "p2": "24"
+            }
+        },
+        "para": {
+            "p1": "1",
+            "p2": "2",
+            "p3": "3",
+            "p4": "4"
+        },
+        "id": 0,
+        "start_time": "0.000",
+        "duration": "3.000",
+        "deleted": false,
+        "mode": "MODES_SICKLE"
+    },
+    {
+        "X": {
+            "H": {
+                "func": "FuncTri",
+                "range": "45",
+                "lower": "45",
+                "p1": "465",
+                "p2": "65"
+            },
+            "S": {
+                "func": "FuncStep",
+                "range": "5",
+                "lower": "65",
+                "p1": "65",
+                "p2": "65"
+            },
+            "V": {
+                "func": "FuncRamp",
+                "range": "65",
+                "lower": "5665",
+                "p2": "56",
+                "p1": "454"
+            }
+        },
+        "Y": {
+            "H": {
+                "func": "FuncConst",
+                "range": "65",
+                "lower": "321",
+                "p1": "12",
+                "p2": "56"
+            },
+            "S": {
+                "func": "FuncNone",
+                "range": "12",
+                "lower": "6",
+                "p1": "35",
+                "p2": "12"
+            },
+            "V": {
+                "func": "FuncTri",
+                "range": "54",
+                "lower": "23",
+                "p1": "12",
+                "p2": "64"
+            }
+        },
+        "para": {
+            "p1": "876",
+            "p2": "45",
+            "p3": "45",
+            "p4": "456"
+        },
+        "id": 1,
+        "start_time": "6.825",
+        "duration": "9.825",
+        "deleted": false,
+        "mode": "MODES_CMAP_FIRE"
+    }
+]

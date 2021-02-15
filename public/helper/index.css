@@ -1,0 +1,118 @@
+.title {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    color: DodgerBlue;
+    width: 100%;
+    font-size: 40px;
+    font-family: 微軟正黑體;
+    white-space: nowrap;
+}
+
+section {
+    margin: 10px auto;
+    text-align: center;
+}
+
+#waveform {
+    position: relative;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+    transition-duration: 0.3s;
+}
+
+button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.table {
+    border-collapse: collapse;
+    text-align: center;
+    font-family: 微軟正黑體, arial, sans-serif;
+    font-size: 8px;
+    border: 1px solid black;
+}
+
+.th {
+    /*background-color: #7FFFD4;*/
+    background-color: lightskyblue;
+    border-bottom: 1px solid #000;
+}
+
+.td, .th {
+    border: 1px solid black;
+    padding: 5px;
+    /*border-left: 1px solid #000;
+    border-right: 1px solid #000;*/
+}
+
+.tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-set {
+    border-collapse: collapse;
+    text-align: center;
+    font-family: 微軟正黑體, arial, sans-serif;
+    font-size: 16px;
+    border: 1px solid black;
+}
+
+input[type="number"] {
+    width: 100px;
+    margin: 2px;
+}
+
+#speed {
+    width: 50px;
+}
+
+#shift_step {
+    width: 60px;
+}
+
+@media screen and (min-width: 1440px) {
+    .sec_table {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        font-family: 微軟正黑體, arial, sans-serif;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .sec_table {
+        display: flex;
+        margin: auto;
+        justify-content: left;
+        align-items: left;
+        font-family: 微軟正黑體, arial, sans-serif;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sec_table_set {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        font-family: 微軟正黑體, arial, sans-serif;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sec_table_set {
+        display: flex;
+        margin: auto;
+        justify-content: left;
+        align-items: left;
+        font-family: 微軟正黑體, arial, sans-serif;
+    }
+}

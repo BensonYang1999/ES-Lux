@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>歌曲編輯系統</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Shortcut Icon" type="image/x-icon" href="music.png" />
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"
+        type='text/css'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <!--<script src="https://unpkg.com/wavesurfer.js/dist/wavesurfer.js.map"></script>-->
+    <script src="https://unpkg.com/wavesurfer.js/dist/plugin/wavesurfer.regions.min.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js/dist/plugin/wavesurfer.timeline.min.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js/dist/plugin/wavesurfer.cursor.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.0/socket.io.js"
+        integrity="sha512-+l9L4lMTFNy3dEglQpprf7jQBhQsQ3/WvOnjaN/+/L4i0jOstgScV0q2TjfvRF4V+ZePMDuZYIQtg5T4MKr+MQ=="
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <span class="title">歌曲編輯系統</span> <br>
+    </header>
+
+    <section>
+        <div id="waveform"></div>
+        <div id="wave-timeline"></div>
+    </section>
+    <!--<section>
+        <div id="equalizer" style="margin-top: 10px; display:flex; justify-content:center;"></div>
+        <p style="display:flex; justify-content:center;"><button id="eq-reset">Reset</button></p>
+    </section>-->
+    <section>
+        <span style="margin: 10px;" id="music-now-playing">目前撥放音樂：</span>
+        選擇音樂：
+        <select id="select_music">
+            <option selected disabled hidden>請選擇:</option>
+        </select>
+    </section>
+    <section>
+        <span>目前時間:</span>
+        <input id="time" size="6" value="0">&nbsp;&nbsp;
+        <button id="forward">&lt; &lt;</button>
+        <button id="play_pause">Play/Pause</button>
+        <button id="backward">&gt; &gt;</button>&nbsp;&nbsp;
+        <input type="number" id="shift_step" value="50">&nbsp;&nbsp;
+        <!--<button id="speed_down">&lt; &lt;</button>-->
+        播放速度：<input type="number" id="speed" size="4" step="0.05" value="1">
+        <!--<button id="speed_up">&gt; &gt;</button>&nbsp;-->
+
+        <br><br>
+        <span>聲譜縮放：</span>
+        <span id="zoom-value">40</span>
+        <input id="zoom" type="range" min="40" max="500" value="40" style="width: 20%">&nbsp;&nbsp;&nbsp;
+        <span class="fa fa-volume-down"></span>
+        <input id="volume" type="range" min="0" max="100" value="100" style="width: 10%">
+        <span class="fa fa-volume-up"></span>
+
+        <br><br>
+        <button id="add">Add</button>&nbsp;&nbsp;
+        <button id="save_json">儲存至伺服器</button>&nbsp;&nbsp;
+        <button id="download_json">下載</button>
+    </section>
+    <br>
+    <section class="sec_table_set">
+        <table class="table-set">
+            <tr id="SelectionTable">
+
+            </tr>
+        </table>
+    </section>
+    <br>
+    <section class="sec_table">
+        <table class="table" id="table_effect">
+            <tr class="tr">
+                <th class="th">序號</th>
+                <th class="th">模式</th>
+                <th class="th">開始</th>
+                <th class="th">時長</th>
+                <th class="th">XH-F</th>
+                <th class="th">XH-R</th>
+                <th class="th">XH-L</th>
+                <th class="th">XH-1</th>
+                <th class="th">XH-2</th>
+                <th class="th">XS-F</th>
+                <th class="th">XS-R</th>
+                <th class="th">XS-L</th>
+                <th class="th">XS-1</th>
+                <th class="th">XS-2</th>
+                <th class="th">XV-F</th>
+                <th class="th">XV-R</th>
+                <th class="th">XV-L</th>
+                <th class="th">XV-1</th>
+                <th class="th">XV-2</th>
+                <th class="th">YH-F</th>
+                <th class="th">YH-R</th>
+                <th class="th">YH-L</th>
+                <th class="th">YH-1</th>
+                <th class="th">YH-2</th>
+                <th class="th">YS-F</th>
+                <th class="th">YS-R</th>
+                <th class="th">YS-L</th>
+                <th class="th">YS-1</th>
+                <th class="th">YS-2</th>
+                <th class="th">YV-F</th>
+                <th class="th">YV-R</th>
+                <th class="th">YV-L</th>
+                <th class="th">YV-1</th>
+                <th class="th">YV-2</th>
+                <th class="th">P1</th>
+                <th class="th">P2</th>
+                <th class="th">P3</th>
+                <th class="th">P4</th>
+            </tr>
+        </table>
+    </section>
+    <br>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
